@@ -1,7 +1,10 @@
-# BDKpex - A YANHAX private kernel cheat
-Apex Kernel physical memory Read/Write no attach. Double data pointer communication without directly chaning, DKOM clears all traces, no system threads, hijacked usermode threads.
+# BDKpex - A YANHAX private kernel driver
 
-Undetected Since Nov 2021
+Yes, I'm making this public so I can put this on my CV.
+
+Kernel physical memory Read/Write no attach. Double data pointer communication without directly chaning, DKOM clears all traces, no system threads, hijacked usermode threads.
+
+A simple implementation on Apex as proof of concept, Undetected Since Nov 2021
 
 I didn't remove my function signatures, please don't steal them and sell them, oh actually, I should go remove them right now... Here's some video I made in 2022, enjoy!
 
