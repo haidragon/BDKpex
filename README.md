@@ -1,5 +1,5 @@
 # BDKpex - A YANHAX private kernel cheat
-Apex Kernel physical memory Read/Write no attach. Double data pointer communication no direct link, DKOM clears all traces, no system threads, no usermode threads, usermode universal hijack.
+Apex Kernel physical memory Read/Write no attach. Double data pointer communication without directly chaning, DKOM clears all traces, no system threads, hijacked usermode threads.
 
 Undetected Since Nov 2021
 
