@@ -1,6 +1,6 @@
-# BDKpex - A YANHAX private kernel driver
+# BDKpex - A YANHAX private (used to be) kernel driver
 
-Yes, I'm making this public so I can put this on my CV.
+Yes, I'm making this public so I can put this on my CV, talk about sacrifices.
 
 Kernel physical memory Read/Write no attach. Double data pointer communication without directly chaning, DKOM clears all traces, no system threads, hijacked usermode threads.
 
