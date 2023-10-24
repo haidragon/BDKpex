@@ -32,12 +32,12 @@ bool menu::DrawIntro(UINT32 OriginalFlags, int user)
 	}
 	else if (user == 3)
 	{
-		d[6].stringInfo = { 30, (ULONG)((unsigned int)SCREEN_WIDTH / 5) , 105, const_cast<LPWSTR>(TEXT(L"Welcome, <Eddie>")) };
+		d[6].stringInfo = { 30, (ULONG)((unsigned int)SCREEN_WIDTH / 5) , 105, const_cast<LPWSTR>(TEXT(L"Welcome, <Eddie>")) }; 
 		// eddie
 	}
-	d[7].stringInfo = { 30, (ULONG)((unsigned int)SCREEN_WIDTH / 5) , 140, const_cast<LPWSTR>(TEXT(L"Today is the end of the Republic, The end of a regime that acquiesces to disorder.")) };
-	d[8].stringInfo = { 30, (ULONG)((unsigned int)SCREEN_WIDTH / 5) , 170, const_cast<LPWSTR>(TEXT(L"This fierce machine which you have built, upon which we stand will bring an end to the Senate, to their cherished fleet")) };
-	d[9].stringInfo = { 30, (ULONG)((unsigned int)SCREEN_WIDTH / 5) , 200, const_cast<LPWSTR>(TEXT(L"All remaining systems will bow to the First Order and will remember this as the last day of the Republic")) };
+	d[7].stringInfo = { 30, (ULONG)((unsigned int)SCREEN_WIDTH / 5) , 140, const_cast<LPWSTR>(TEXT(L"YANHAX IS DA BEST")) };
+	d[8].stringInfo = { 30, (ULONG)((unsigned int)SCREEN_WIDTH / 5) , 170, const_cast<LPWSTR>(TEXT(L"YANHAX IS DA BEST")) };
+	d[9].stringInfo = { 30, (ULONG)((unsigned int)SCREEN_WIDTH / 5) , 200, const_cast<LPWSTR>(TEXT(L"YANHAX IS DA BEST")) };
 
 	return true;
 }
