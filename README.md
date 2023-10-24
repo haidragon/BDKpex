@@ -4,7 +4,7 @@ Sometimes I think I'm stuck in the past. I was really proud of this, but now I g
 
 Kernel physical memory Read/Write no attach. Double data pointer communication without directly chaning, DKOM clears all traces, no system threads, hijacked usermode threads.
 
-A simple implementation on Apex as proof of concept, Undetected Since Nov 2021
+A simple implementation on Apex as proof of concept, Undetected Since The Very Beginning of Time.
 
 Dear pasters, Yes you can paste anything in there.
 
