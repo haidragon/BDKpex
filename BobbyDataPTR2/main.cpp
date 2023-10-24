@@ -283,18 +283,18 @@ NTSTATUS DriverEntry(PMDL mdl, PUNICODE_STRING RegistryPath)
 	}
 
 	PVOID ZePointer = process::FindPattern((PCHAR)win32kBase,
-		skCrypt("\x48\x8B\x05\x00\x00\x00\x00\x49\x8B\xDF\x48\x85\xC0\x0F\x84\x00\x00\x00\x00"),
-		skCrypt("xxx????xxxxxxxx????")
+		skCrypt("[SIGNATURE-REMOVED-FOR-GITHUB]"),
+		skCrypt("[SIGNATURE-REMOVED-FOR-GITHUB]")
 	);
 
 	PVOID SecondPointer = process::FindPattern((PCHAR)win32kBase,
-		skCrypt("\x48\x8B\x05\x00\x00\x00\x00\x8B\xDF\x48\x85\xC0\x74\x00\xFF\x15\x00\x00\x00\x00\xEB\x00\xB8\x00\x00\x00\x00\x85\xC0\x78\x00\x48\x8B\x05\x00\x00\x00\x00\x48\x85\xC0\x74\x00\xFF\x15\x00\x00\x00\x00\x8B\xD8\x48\x39\x35\x00\x00\x00\x00\x74\x00\x48\x8B\x0D\x00\x00\x00\x00\x66\x39\x79\x48\x74\x00\x48\x8B\x49\x40\x41\xB9\x00\x00\x00\x00\xB2\x00\x4C\x89\x74\x24\x20\x45\x8D\x41\xA7"),
-		skCrypt("xxx????xxxxxx?xx????x?x????xxx?xxx????xxxx?xx????xxxxx????x?xxx????xxxxx?xxxxxx????x?xxxxxxxxx")
+		skCrypt("[SIGNATURE-REMOVED-FOR-GITHUB]"),
+		skCrypt("[SIGNATURE-REMOVED-FOR-GITHUB]")
 	);
 
 	auto ApiSetGetPenArbitrationTypeAddress = process::FindPattern((PCHAR)win32kBase,
-		skCrypt("\xE8\x00\x00\x00\x00\x83\xF8\x00\x73\x00"),
-		skCrypt("x????xx?x?")
+		skCrypt("[SIGNATURE-REMOVED-FOR-GITHUB]"),
+		skCrypt("[SIGNATURE-REMOVED-FOR-GITHUB]")
 	);
 
 	ApiSetGetPenArbitrationTypeAddress = RVA(ApiSetGetPenArbitrationTypeAddress, 5);
