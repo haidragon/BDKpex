@@ -3,7 +3,7 @@ Apex Kernel physical memory Read/Write no attach. Double data pointer communicat
 
 Undetected Since Nov 2021 - YANHAX = **FUN UNDETECTED** =
 
-I didn't remove my function signatures, please don't steal them and sell them, oh actually, I should go remove them right now...
+I didn't remove my function signatures, please don't steal them and sell them, oh actually, I should go remove them right now... Here's some video I made in 2022, enjoy!
 
 
 [![Showcase 1](https://img.youtube.com/vi/fQQOC9evsuE/0.jpg)](https://www.youtube.com/watch?v=fQQOC9evsuE)
