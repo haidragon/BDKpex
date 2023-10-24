@@ -1,0 +1,80 @@
+;
+; BobbyDataPTR2.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=System ; TODO: specify appropriate Class
+ClassGuid={4d36e97d-e325-11ce-bfc1-08002be10318} ; TODO: specify appropriate ClassGuid
+Provider=%ManufacturerName%
+CatalogFile=BobbyDataPTR2.cat
+DriverVer = 01/28/2022,23.39.50.973
+PnpLockdown=1
+
+[DestinationDirs]
+DefaultDestDir = 12
+BobbyDataPTR2_Device_CoInstaller_CopyFiles = 11
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+BobbyDataPTR2.sys  = 1,,
+;
+
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTx86
+
+[Standard.NTx86]
+%BobbyDataPTR2.DeviceDesc%=BobbyDataPTR2_Device, Root\BobbyDataPTR2 ; TODO: edit hw-id
+
+[BobbyDataPTR2_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+BobbyDataPTR2.sys
+
+;-------------- Service installation
+[BobbyDataPTR2_Device.NT.Services]
+AddService = BobbyDataPTR2,%SPSVCINST_ASSOCSERVICE%, BobbyDataPTR2_Service_Inst
+
+; -------------- BobbyDataPTR2 driver install sections
+[BobbyDataPTR2_Service_Inst]
+DisplayName    = %BobbyDataPTR2.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\BobbyDataPTR2.sys
+
+;
+;--- BobbyDataPTR2_Device Coinstaller installation ------
+;
+
+[BobbyDataPTR2_Device.NT.CoInstallers]
+AddReg=BobbyDataPTR2_Device_CoInstaller_AddReg
+CopyFiles=BobbyDataPTR2_Device_CoInstaller_CopyFiles
+
+[BobbyDataPTR2_Device_CoInstaller_AddReg]
+;
+
+
+[BobbyDataPTR2_Device_CoInstaller_CopyFiles]
+;
+
+
+[BobbyDataPTR2_Device.NT.Wdf]
+KmdfService =  BobbyDataPTR2, BobbyDataPTR2_wdfsect
+[BobbyDataPTR2_wdfsect]
+KmdfLibraryVersion = 1.15
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="<Your manufacturer name>" ;TODO: Replace with your manufacturer name
+DiskName = "BobbyDataPTR2 Installation Disk"
+BobbyDataPTR2.DeviceDesc = "BobbyDataPTR2 Device"
+BobbyDataPTR2.SVCDESC = "BobbyDataPTR2 Service"

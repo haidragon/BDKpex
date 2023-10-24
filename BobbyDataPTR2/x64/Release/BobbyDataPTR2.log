@@ -1,0 +1,6 @@
+﻿  Building 'BobbyDataPTR2' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+  Stamping x64\Release\BobbyDataPTR2.inf
+  Stamping [Version] section with DriverVer=03/24/2023,7.18.49.151
+  unity_YUPVQ09SQUGC0S40.cpp
+  BobbyDataPTR2.vcxproj -> D:\Hacks\Progress\Bobbt .data ptr\BDKpex\BobbyDataPTR2\x64\Release\BobbyDataPTR2.sys
+  Driver is 'Universal'.

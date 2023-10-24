@@ -1,0 +1,9 @@
+﻿  Building 'BobbyDataPTR2' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+  Stamping x64\Release\BobbyDataPTR2.inf
+  Stamping [Version] section with DriverVer=06/09/2022,14.22.18.325
+  unity_NVF9JA13BGOW7SFM.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\minwinbase.h(224,30): error C2146: syntax error: missing ';' before identifier 'CRITICAL_SECTION'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\minwinbase.h(225,31): error C2146: syntax error: missing ';' before identifier 'PCRITICAL_SECTION'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\minwinbase.h(228,36): error C2146: syntax error: missing ';' before identifier 'CRITICAL_SECTION_DEBUG'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\minwinbase.h(229,37): error C2146: syntax error: missing ';' before identifier 'PCRITICAL_SECTION_DEBUG'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\sysinfoapi.h(607,64): error C2061: syntax error: identifier 'PSYSTEM_PROCESSOR_CYCLE_TIME_INFORMATION'

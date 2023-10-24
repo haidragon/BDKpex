@@ -1,0 +1,8 @@
+﻿  Building 'BobbyDataPTR2' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+  Stamping Debug\BobbyDataPTR2.inf
+  Stamping [Version] section with DriverVer=01/28/2022,23.37.19.724
+  main.cpp
+  utilities.cpp
+  Generating Code...
+  BobbyDataPTR2.vcxproj -> C:\Users\bobby\OneDrive - University of Edinburgh\Documents\Hacks\Progress\Bobbt .data ptr\BobbyDATAPTR2\BobbyDataPTR2\Debug\BobbyDataPTR2.sys
+  Driver is 'Universal'.
